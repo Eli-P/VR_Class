@@ -22,7 +22,7 @@ public class Movement : MonoBehaviour
         lr = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.forward * fb * Time.deltaTime * speed);
         transform.Translate(Vector3.left * lr * Time.deltaTime * speed);
-        if (Input.GetKeyDown(KeyCode.Joystick1Button1))
+        if (Input.GetKeyDown(KeyCode.Joystick1Button2))
             cam.Rotate(Vector3.forward * speed * 5 * Time.deltaTime);
     }
 }
